@@ -175,7 +175,7 @@ $(document).ready(function(){
 
 			// If input error is incorrect, alert the user. Otherwise, continue...
 			if (checkArtist === 0) {
-				$(".search-error").html("*Sorry, try again");
+				$("#search-error").html("*Sorry, try again");
 				// console.log("*Sorry, try again");
 			}
 			else {
@@ -363,7 +363,7 @@ $(document).ready(function(){
 		$("div#youtube-error").hide();
 		$("div#twitter-error").empty();
 		$("div#twitter-error").empty();
-		$(".search-error").empty();
+		$("#search-error").empty();
 
 		ticketmasterRequest(artist);
 
@@ -389,7 +389,7 @@ $(document).ready(function(){
 		$("div#youtube-error").hide();
 		$("div#twitter-error").empty();
 		$("div#twitter-error").hide();
-		$(".search-error").empty();
+		$("#search-error").empty();
 
 		// console.log("Artist: " + artist);
 
@@ -419,7 +419,7 @@ $(document).ready(function(){
 		$("div#youtube-error").hide();
 		$("div#twitter-error").empty();
 		$("div#twitter-error").empty();
-		$(".search-error").empty();
+		$("#search-error").empty();
 
 		// console.log("Artist: " + artist);
 
@@ -449,7 +449,7 @@ $(document).ready(function(){
 		$("div#youtube-error").hide();
 		$("div#twitter-error").empty();
 		$("div#twitter-error").empty();
-		$(".search-error").val("");
+		$("#search-error").val("");
 
 		// console.log("Artist: " + artist);
 

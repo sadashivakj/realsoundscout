@@ -184,7 +184,7 @@ h4 {
 	margin:3%;
 }
 
-.search-error {
+#search-error {
 	font-family:'Roboto', 'Helvetica Neue', Helvetica;
 	font-size:20px;
 	color:#ff0033;
