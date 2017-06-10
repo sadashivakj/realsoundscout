@@ -77,6 +77,10 @@ div#youtube-error {
 	background-color:transparent;
 }
 
+.aboutbg {
+	background-color: #000;
+}
+
 /* ********** TEXT ********** */
 
 @font-face {

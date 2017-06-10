@@ -33,10 +33,6 @@ $(document).ready(function(){
 	var searchData = firebase.database();
 
 
-
-
-
-
 	// GLOBAL VARIABLES ==========================================
 	var countryCode = "US";
 	var dateOrder = "date,asc";
@@ -358,11 +354,7 @@ $(document).ready(function(){
         	searchinfo :  artist,
     	}); 
 
-
-
-
-
-		
+	
 		$("#artist-input1").val("");
 		$("#twitcontainer").empty();
 		$("#concerts-display").empty();
@@ -371,8 +363,7 @@ $(document).ready(function(){
 		$("div#youtube-error").hide();
 		$("div#twitter-error").empty();
 		$("div#twitter-error").empty();
-
-		
+		$(".search-error").empty();
 
 		ticketmasterRequest(artist);
 
@@ -385,8 +376,6 @@ $(document).ready(function(){
 
 		// This is the user's input
 		var artist = $("#artist-input2").val().trim();
-
-
 
 		searchData.ref().push({
         	searchinfo :  artist,
@@ -401,7 +390,6 @@ $(document).ready(function(){
 		$("div#twitter-error").empty();
 		$("div#twitter-error").hide();
 		$(".search-error").empty();
-
 
 		// console.log("Artist: " + artist);
 
@@ -431,6 +419,7 @@ $(document).ready(function(){
 		$("div#youtube-error").hide();
 		$("div#twitter-error").empty();
 		$("div#twitter-error").empty();
+		$(".search-error").empty();
 
 		// console.log("Artist: " + artist);
 
@@ -460,6 +449,7 @@ $(document).ready(function(){
 		$("div#youtube-error").hide();
 		$("div#twitter-error").empty();
 		$("div#twitter-error").empty();
+		$(".search-error").val("");
 
 		// console.log("Artist: " + artist);
 
